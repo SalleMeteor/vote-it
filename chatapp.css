@@ -1,0 +1,40 @@
+html {
+    padding: 10px;
+    font-family: Verdana, sans-serif;
+    background-color: #0099FF;
+}
+
+body {
+text-align:center;
+ background-color:#A9E2F3;
+}
+#wrapper {
+margin: 0 auto;
+width: xxxx; /* Replace the xxxx with the the width of your site (eg 800px)*/
+text-align:left;
+}
+
+.login-buttons-dropdown-align-right {
+    float: right;
+    padding-top:20px;
+}
+
+/* CSS declarations go here */
+.login-display-name{color: white }
+.login-button{background-color: white}
+ #main {
+    padding-top:20px;
+   background-color: #0099FF;
+}/* CSS declarations go here */
+
+.wellcome1 {
+   display: block;
+    color: orange;
+    font-weight: bold;
+}
+
+.form-control[class="form-control"] {
+    width: 400px;
+    height: 200px;
+
+}

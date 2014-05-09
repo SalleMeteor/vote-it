@@ -1,0 +1,51 @@
+<head>
+  <title>Chat app</title>
+</head>
+
+<body>
+  
+  <div class="navbar navbar-static-top navbar-inverse" style="background-color:#0099FF">
+ 
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Chatapp</a>
+          <ul class="nav pull-right">
+            <li>
+              {{> loginButtons}}
+            </li>
+          </ul>
+        </div>
+      </div>
+ 
+	</div>
+ 
+  {{> welcome }}
+  {{> input}}
+  {{> messages}}
+</body>
+
+<template name="welcome">
+ 
+  <div style="text-align:center;padding: 25px;font-size:x-large"><p>
+    Welcome to the example chat app! Please log in to show your username.
+  </p>
+  </div>
+</template>
+
+<template name="messages">
+  <div style="vertical-align: top;margin-top=20px">
+  {{#each messages}}
+    <strong>{{name}}:</strong> {{message}}<br>
+  {{/each}}
+  </div>
+</template>
+
+<template name="input">
+  <div style="text-align:center;margin-top=20px">
+  <input type="text" class="form-control" id="message" placeholder="Entra un missatge">
+  <br>
+  
+  </div>
+  
+
+</template>
